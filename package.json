@@ -1,19 +1,23 @@
 {
   "name": "search-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Search app",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Thomas720/search-app.git"
   },
   "author": "Thomas Tilahun",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Thomas720/search-app/issues"
   },
-  "homepage": "https://github.com/Thomas720/search-app#readme"
+  "homepage": "https://github.com/Thomas720/search-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
 }
