@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Peoples from '../components/Peoples'
 import { listOfPeoples } from '../actions/employeeActions'
-
+import Loader from '../components/Loader'
+import Message from '../components/Message'
 
 
 const HomeScreen = () => {
@@ -23,10 +24,10 @@ const HomeScreen = () => {
 
         <h1>ALL Employee List</h1>
         {loading ? (
-        <h2>Loading...</h2> 
+        <Loader />
         ) : error ? (
 
-         <h2>{error}</h2>
+            <Message variant='danger'>{error}</Message> 
          ) : (
         <ul className="list-group"> 
             {peoples.map(people => (
