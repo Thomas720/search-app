@@ -1,41 +1,47 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import { Row, Col } from 'react-bootstrap'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Peoples from '../components/Peoples'
+import { listOfPeoples } from '../actions/employeeActions'
+
 
 
 const HomeScreen = () => {
-    const [peoples, setPeoples] = useState([])
+
+    const dispatch = useDispatch()
+
+    const peoplesList = useSelector(state => state.peoplesList)
+    const { loading, error, peoples } = peoplesList
 
     useEffect(() => {
+        dispatch(listOfPeoples())
+    }, [dispatch])
+   
 
-        const fetchPeoples = async () => {
-            const { data } = await axios.get('/api/peoples')
-            
-            setPeoples(data)
-        }
-
-        fetchPeoples()
-    }, [])
 
     return (
         <>
 
-        <h1>All peoples</h1>
-        <Row>
+        <h1>ALL Employee List</h1>
+        {loading ? (
+        <h2>Loading...</h2> 
+        ) : error ? (
 
-            
+         <h2>{error}</h2>
+         ) : (
+        <ul className="list-group"> 
             {peoples.map(people => (
-                <Col key={people._id} sm={15} md={6} lg={4} xl={3}>
-                    <Peoples people={people} />
-                </Col>
+                <li className='listgroup-item' key={people._id} >
+                  <Peoples people={people} />
+                </li>
+              
             ))}
-        </Row>
+        </ul>
 
-
+          )}
             
         </>
     )
 }
+
 
 export default HomeScreen

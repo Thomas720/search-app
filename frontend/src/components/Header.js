@@ -1,22 +1,27 @@
 import React from 'react'
-import { Container, Navbar , Nav, Form, FormControl, Button } from 'react-bootstrap'
+import {NavDropdown, Container, Navbar , Nav, Form, FormControl, Button } from 'react-bootstrap'
 
-const Header = () => {
+
+const Header = ({people}) => {
   
     return (
+      <Container>
+
+     
         <header>
             <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
                 <Container>
-  <Navbar.Brand href="/">
-    {
-    
-
-  }Search</Navbar.Brand>
+  <Navbar.Brand>Search App</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       
-      <Nav.Link href="#link">Filter By:</Nav.Link>
+      <NavDropdown title="Search By " id="basic-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Name</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Job Title</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Age</NavDropdown.Item>
+        <NavDropdown.Divider />
+      </NavDropdown>
     
     </Nav>
     <Form inline>
@@ -27,6 +32,7 @@ const Header = () => {
   </Container>
 </Navbar>
         </header>
+        </Container>
     )
 }
 
