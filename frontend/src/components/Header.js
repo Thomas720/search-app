@@ -1,24 +1,43 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import Peoples from '../components/Peoples'
-import { listOfPeoples } from '../actions/employeeActions'
+import React from 'react'
+// import React, { useEffect, useState } from 'react'
+// import { useDispatch, useSelector } from 'react-redux'
+// import Peoples from '../components/Peoples'
+// import { listOfPeoples } from '../actions/employeeActions'
 import {NavDropdown, Container, Navbar , Nav, Form, FormControl, Button } from 'react-bootstrap'
 
 
-const Header = ({ persone }) => {
-  const dispatch = useDispatch()
+const Header = ({ people }) => {
+//  const employees = people.employee
+//  let filterEmployee = employees.filter(employee) => {
+//    return employee,name.indexOf(people) !== -1
+//  }
+  // const [teams, setTeams] = useState(people);
+  //   const [search, setSearch] = useState("T");
+  // const [name, setName] = useState('')
+  // const [filterDspaly, setFilterDisplay] = useState(people)
 
-    const peoplesList = useSelector(state => state.peoplesList)
-    const { peoplesList } = peoplesList
+  // const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(listOfPeoples())
-    }, [dispatch])
+  //   const peoplesList = useSelector(state => state.peoplesList)
+  //   const { peoplesList } = peoplesList
 
-    const handleChange = () => {
-        
-    }
+  //   useEffect(() => {
+  //       dispatch(listOfPeoples())
+  //   }, [dispatch])
+  // const employees = people.employees;
+  //       let filteredEmployees = employees.filter(
+  //               (employee) => {
+  //                   return employee.name.indexOf(this.state.searchValue) !== -1;
+  //               }
+  //           );
+
+    // const handleChange = (e) => {
+    //     e.preventDefault()
+    //       return { name: people.name}
+    //     }
+
     return (
+
       <Container>
 
      
@@ -40,12 +59,21 @@ const Header = ({ persone }) => {
       </NavDropdown>
     
     </Nav>
-    <Form inline>
+    <Form inline  >
       <FormControl type="text" placeholder="Search Name" className="mr-sm-2" 
-      onChange={e => handleChange(e.target.value)}
-      />
-      <Button variant="outline-success">
+      // onChange={e => {
+      //   (
+      //     people.filter(p => {
+      //     return p.toLowerCase().includes(e.target.value.toLowerCase());
+      //   }));
+  
+      
+      // }}
     
+    />
+      
+      <Button variant="outline-success">
+      {/* {handleChange} */}
         Search</Button>
     </Form>
   </Navbar.Collapse>
