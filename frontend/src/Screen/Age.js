@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Peoples from '../components/Peoples'
+import AgeList from '../components/AgeList'
 import { listOfPeoples } from '../actions/employeeActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 
 
-const AllEmployee = () => {
+const Age = () => {
 
     const dispatch = useDispatch()
 
@@ -20,7 +20,7 @@ const AllEmployee = () => {
     return (
     
     <>
-         <h1>ALL Employee List</h1>
+         <h1>Age List</h1>
         {loading ? (
         <Loader />
         ) : error ? (
@@ -30,7 +30,7 @@ const AllEmployee = () => {
         <ul className="list-group"> 
             {peoples.map(people => (
                 <ol className='listgroup-item' key={people._id} >
-                  <Peoples people={people} />
+                  <AgeList people={people} />
                 </ol>
               
             ))}
@@ -41,5 +41,5 @@ const AllEmployee = () => {
 }
 
 
-export default AllEmployee
+export default Age
 

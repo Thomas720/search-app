@@ -1,48 +1,23 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import Peoples from '../components/Peoples'
-import { listOfPeoples } from '../actions/employeeActions'
-import Loader from '../components/Loader'
-import Message from '../components/Message'
-
+import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const HomeScreen = () => {
-
-    const dispatch = useDispatch()
-
-    const peoplesList = useSelector(state => state.peoplesList)
-    const { loading, error, peoples } = peoplesList
-
-    useEffect(() => {
-        dispatch(listOfPeoples())
-    }, [dispatch])
-   
-
-
     return (
-        <>
+        <Container className="home-page">
+        <h2 className="hello">HELLO!</h2>
+        <p className="home_p">
+          Can you guess the artist? This quiz is unique and fun because it
+          involves
+          <br /> a series of popular song, and you have to imagine who sing the
+          song. <br />
+          For someone who is a fan of music, this may be a total breeze. <br />
+          Those who are not as familiar with music can learn something new.{" "}
+          <br /> To paly the game you need to sign up first.
+        </p>
 
-        <h1>ALL Employee List</h1>
-        {loading ? (
-        <Loader />
-        ) : error ? (
-
-            <Message variant='danger'>{error}</Message> 
-         ) : (
-        <ul className="list-group"> 
-            {peoples.map(people => (
-                <li className='listgroup-item' key={people._id} >
-                  <Peoples people={people} />
-                </li>
-              
-            ))}
-        </ul>
-
-          )}
-            
-        </>
+        <p class="good_luck">Good Luck!</p>
+      </Container>
     )
 }
-
 
 export default HomeScreen

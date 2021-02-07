@@ -70,76 +70,7 @@ const peoples = [
     job_title: "Driver",
     age: 32
 },
-{
-    _id: '11',
-    name: "Mathew",
-    email: "mtomashova@zimbio.com",
-    job_title: "Lawyer",
-    age : 30
-},
-{
-    _id: '12',
-    name: "Burt",
-    email: "bwalcherb@hibu.com",
-    job_title: "Security",
-    age: 19
-},
-{
-    _id: '13',
-    name: "Eunice",
-    email: "estoyellc@mapy.cz",
-    job_title: "Software Engineer",
-    age: 29
-},
-{
-    _id: '14',
-    name: "Clareta",
-    email: "cketchend@purevolume.com",
-    job_title: "Software Tester",
-    age: 23
-},
-{
-    _id: '15',
-    name: "Jamal",
-    email: "jlauriee@merriam-webster.com",
-    job_title: "Secretary",
-    age: 33
-},
-{
-    _id: '16',
-    name:"Irwinn",
-    email:"ifruchonf@reddit.com",
-    job_title: "Supervisor",
-    age:43
-},
-{
-    _id: '17',
-    name: "Nathan",
-    email: "nfoxleyg@nih.gov",
-    job_title: "Software Engineer",
-    age:34
-},
-{
-    _id: '18',
-    name:"Yorker",
-    email:"yschimonekh@odnoklassniki.ru",
-    job_title: "Advisor",
-    age:50
-},
-{
-    _id: '19',
-    name: "Renault",
-    email: "rrozeai@ehow.com",
-    job_title: "Graphic Designer",
-    age: 36
-},
-{
-    _id: '20',
-    name: "Milissent",
-    email: "mandersj@ask.com",
-    job_title: "Lead",
-    age: 24
-}
+
 
 ]
 

@@ -5,16 +5,11 @@ import { employeeReducer } from './reducer/employeeReducer'
 
 const reducer = combineReducers({
 
-peoplesList: employeeReducer,
-    // userDetails: userDetailReducer,
+    peoplesList: employeeReducer,
 
 })
 
-const initialState = {
-   
-    
-
-}
+const initialState = {}
 
 const middleware = [thunk]
 
