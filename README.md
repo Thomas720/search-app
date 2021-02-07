@@ -22,7 +22,7 @@
 
 ### Domain Modeling
 
-![Domain Modeling](./src/assets/image/Domain-modeling.jpg)
+![Domain Modeling](../src/assets/image/Domain-modeling.jpg)
 
 ## Project work time
 
