@@ -6,7 +6,7 @@
 
 ### Wireframes:
 
-![Wire-frame](./src/assets/image/wireFrame.png)
+![Wire-frame](./frontend/src/assets/image/wireFrame.png)
 
 ### User Stories
 
@@ -22,7 +22,7 @@
 
 ### Domain Modeling
 
-![Domain Modeling](./src/assets/image/Domain-modeling.jpg)
+![Domain Modeling](../src/assets/image/Domain-modeling.jpg)
 
 ## Project work time
 
