@@ -28,6 +28,14 @@
 
 - 6 hours
 
+## To Start server
+
+- npm run server from main path
+
+## To Start Client
+
+- npm run from frontend path
+
 ## Main Dependencies
 
 - [NodeJS](https://nodejs.org/en/)
