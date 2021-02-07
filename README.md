@@ -1,6 +1,6 @@
-# Project - "Search Application"
+# Project - Search Application
 
-# Project Idea
+## Project Idea
 
 - Search Page with a textbox to allow users searching by name among hundreds thousands of employees,
 
@@ -58,6 +58,12 @@ React
 Vs Code
 Ubutu
 Github
+
+#### Stretch
+
+- Ability to Search and Filter from each page.
+
+- Ability to do a login.
 
 ### Referencence
 
