@@ -6,7 +6,7 @@
 
 ### Wireframes:
 
-![Wire-frame](./frontend/src/assets/image/wireFrame.png)
+![Wire-frame](../../src/assets/image/wireFrame.png)
 
 ### User Stories
 
