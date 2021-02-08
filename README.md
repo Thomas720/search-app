@@ -6,7 +6,7 @@
 
 ### Wireframes:
 
-![Wire-frame](../../src/assets/image/wireFrame.png)
+![Wire-frame](../src/assets/image/wireFrame.png)
 
 ### User Stories
 
@@ -67,8 +67,8 @@ Github
 
 ### Referencence
 
-Google
-Stackoverflow
+- Google
+- Stackoverflow
 
 ### Authors
 
